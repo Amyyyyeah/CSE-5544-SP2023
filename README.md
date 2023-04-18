@@ -27,7 +27,7 @@ We then interpret the visualization results to explore insight in the dataset. B
 Especially, the project can contribute to international society by discovering best practices and improvements for various well-being index factors and thus providing suggestions that can promote learning and collaboration between countries.
 
 ## Visualization 2
-The correlation between the Education Attainment and Years in Education Index for different countries.
+Stacked bar plot that depicts the correlation between Education Attainment and Years in Education Index for various countries, along with a user-friendly interface design.
 
 ### Data & Tools
 ```shell
@@ -42,7 +42,7 @@ The correlation between the Education Attainment and Years in Education Index fo
 
 
 ## Visualization 3
-The water quality and air pollution index values for different countries or regions.
+Heatmap that represents water quality and air pollution index values for different countries or regions, with a user-interface design.
 
 ### Data & Tools
 ```shell
