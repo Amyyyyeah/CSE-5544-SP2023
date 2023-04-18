@@ -8,7 +8,7 @@ We used OECD Better Life Index dataset. The OECD Better Life Index is a dataset 
 ```shell
 https://www.oecdbetterlifeindex.org/#/11111111111
 ```
-## User's guide describing how to use your project
+## User's guide describing how to use our project
 
 The users of the visualization of the OECD Better Life Index data can be varied, depending on the context and purpose of the visualization. However, the target audience generally includes policymakers, researchers, analysts, educators, and the general public who are interested in comparing well-being indicators and outcomes across different countries. The visualization aims to provide a user-friendly and interactive tool for exploring the data and understanding how different countries perform in different aspects of well-being, such as education, health, environment, and more.
 
