@@ -26,6 +26,19 @@ We then interpret the visualization results to explore insight in the dataset. B
 
 Especially, the project can contribute to international society by discovering best practices and improvements for various well-being index factors and thus providing suggestions that can promote learning and collaboration between countries.
 
+## Visualization 1
+World map that shows the Life satisfaction index for various countries with a user-interface design
+
+### Data & Tools
+```shell
+- Tools = 
+- Code = 
+- Proceeded Data = 
+```
+<img src="https://github.com/Amyyyyeah/CSE-5544-SP2023/blob/main/fig1_1.jpeg" width="650px" height="530px" title="server result2" alt="server2"></img><br/>
+* Description of how the completed project corresponds to the proposal
+    - 
+
 ## Visualization 2
 Stacked bar plot that depicts the correlation between Education Attainment and Years in Education Index for various countries, along with a user-friendly interface design.
 
@@ -56,7 +69,17 @@ Heatmap that represents water quality and air pollution index values for differe
     - To enhance the user interface design, we incorporated a dot graph. The purple graph is water quality and the red graph is air pollution. If the gap between the purple and red graphs is larger than the others, it indicates that the country has a very healthy environment, and vice versa.
     - If the color of the air pollution column is darker gray, it indicates that the country has a higher level of air pollution. If the color of the water quality column is more purple, it means that the country has a good level of water quality.
 
-
+## Visualization 4
+Plot chart that shows the average income and economic freedom and quality of life factors comparing the top and bottom earners
+### Data & Tools
+```shell
+- Tools = 
+- Code = 
+- Proceeded Data = 
+```
+<img src="https://github.com/Amyyyyeah/CSE-5544-SP2023/blob/main/fig1_1.jpeg" width="650px" height="530px" title="server result2" alt="server2"></img><br/>
+* Description of how the completed project corresponds to the proposal
+    - 
 
 ## REFERENCES
 [1] C. M. Freitas, P. R. Luzzardi, R. A. Cava, M. Winckler, M. S. Pimenta,
