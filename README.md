@@ -31,13 +31,15 @@ World map that shows the Life satisfaction index for various countries with a us
 
 ### Data & Tools
 ```shell
-- Tools = 
-- Code = 
-- Proceeded Data = 
+- Tools = Tableau
+- Code = Vis1.twb
+- Proceeded Data = preprocessed_data.csv
 ```
 <img src="https://github.com/Amyyyyeah/CSE-5544-SP2023/blob/main/fig1_1.jpeg" width="700px" height="500px" title="server result2" alt="server2"></img><br/>
 * Description of how the completed project corresponds to the proposal
-    - 
+    - To provide the user-friendly interface design, we created a world map. The countries colored as blue and red have higer and lower Life satisfaction index, respectively.
+    - We added filters for other social factors to investigate relationships between the factors and Life satisfaction index. The filters can simultaneously display the countries within filtered values (range) and their satisfaction index. 
+    - We can find which social factors are highly related to the Life satisfaction index.
 
 ## Visualization 2
 Stacked bar plot that depicts the correlation between Education Attainment and Years in Education Index for various countries, along with a user-friendly interface design.
@@ -70,16 +72,18 @@ Heatmap that represents water quality and air pollution index values for differe
     - If the color of the air pollution column is darker gray, it indicates that the country has a higher level of air pollution. If the color of the water quality column is more purple, it means that the country has a good level of water quality.
 
 ## Visualization 4
-Plot chart that shows the average income and economic freedom and quality of life factors comparing the top and bottom earners
+Plot chart that shows a comparsion of top and bottom earners on the Life satisfaction index and quality of life factors. 
 ### Data & Tools
 ```shell
-- Tools = 
-- Code = 
-- Proceeded Data = 
+- Tools = Python
+- Code = Vis4.html
+- Proceeded Data = preprocessed_data.csv
 ```
 <img src="https://github.com/Amyyyyeah/CSE-5544-SP2023/blob/main/fig4_1.jpeg" width="590px" height="530px" title="server result2" alt="server2"></img><br/>
 * Description of how the completed project corresponds to the proposal
-    - 
+   - We created a scatter map that shows the relationshipt between the Life satisfaction index and one of the quality of life factors. To compare top and bottom earners, they are color coded differently.
+    - To provide the user-friendly interface design, we set a box where one of the quality of life factors can be selected. Users can view the results of any factor that is selected.
+    - For more information, we can check income, country name, and selected factor's and the Life satisfaction's values through mouseover.
 
 ## REFERENCES
 [1] C. M. Freitas, P. R. Luzzardi, R. A. Cava, M. Winckler, M. S. Pimenta,
