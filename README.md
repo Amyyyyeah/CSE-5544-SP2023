@@ -12,7 +12,7 @@ https://www.oecdbetterlifeindex.org/#/11111111111
 
 The users of the visualization of the OECD Better Life Index data can be varied, depending on the context and purpose of the visualization. However, the target audience generally includes policymakers, researchers, analysts, educators, and the general public who are interested in comparing well-being indicators and outcomes across different countries. The visualization aims to provide a user-friendly and interactive tool for exploring the data and understanding how different countries perform in different aspects of well-being, such as education, health, environment, and more.
 
-The main deliverables of this project are diverse visualizations that provide a comprehensive and comparative view of the well-being of populations across different countries. The visualizations include
+The main deliverables of this project are diverse visualizations that provide a comprehensive and comparative view of the well-being of populations across different countries. The visualizations include:
     
     * World map that shows the Life satisfaction index for various countries with a user-interface design
     
