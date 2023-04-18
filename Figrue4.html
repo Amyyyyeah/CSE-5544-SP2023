@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Comparison of top and bottom earners on Life satisfaction and Quality of life factors</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <style>
+        #tooltip {
+          position: absolute;
+          background-color: transparent;
+          border: none;
+          padding: 0px;
+          font-size: 14px;
+          font-family: sans-serif;
+        }
+        .hidden {
+          display: none;
+        }
+
+        svg {
+            width: 800px;
+            height: 500px;
+        }
+
+        .legend {
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+        }
+
+        .legend rect {
+            fill-opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <h1>&nbsp;Comparison of top and bottom earners     </h1>
+    <h2>&nbsp;Life satisfaction vs. Quality of life factors     </h2>
+
+    <div class="legend">
+        <svg width="200" height="50">
+            <rect x="450" y="350" width="12" height="12" fill="#990000"></rect>
+            <text x="470" y="350" dy=".75em">Top earners</text>
+            <rect x="450" y="370" width="12" height="12" fill="#002045"></rect>
+            <text x="470" y="370" dy=".75em">Bottom earners</text>
+        </svg>
+    </div>
+
+    <div>
+        <label>X Axis:</label>
+        <select id="xSelect"></select>
+    </div>
+
+    <div>
+        <label>Y Axis:</label>
+        <select id="ySelect"></select>
+    </div>
+    
+    <svg></svg>
+
+
+
+    <!-- 툴팁 -->
+    <div id="tooltip" class="hidden">
+        <p><span id="value"></span></p>
+    </div>
+
+
+    <script>
+        var svg = d3.select("svg"),
+            margin = 80,
+            width = parseInt(svg.style("width")) - margin * 2,
+            height = parseInt(svg.style("height")),
+            xSelect = d3.select("#xSelect"),
+            ySelect = d3.select("#ySelect");
+
+        d3.csv("preprocessed_data.csv").then(function(data) {
+            var columns = data.columns;
+            columns.splice(columns.indexOf("Country"), 1); 
+            xSelect.selectAll("option")
+                .data(columns)
+                .enter()
+                .append("option")
+                .text(function(d) { return d; });
+            ySelect.selectAll("option")
+                .data(columns)
+                .enter()
+                .append("option")
+                .text(function(d) { return d; });
+
+            var xValue = xSelect.property("value"),
+                yValue = ySelect.property("value");
+
+
+            var xScale = d3.scaleLinear()
+                .domain(d3.extent(data, function(d) { return +d[xValue]; }))
+                .range([margin, width - margin]);
+
+            var yScale = d3.scaleLinear()
+                .domain(d3.extent(data, function(d) { return +d[yValue]; }))
+                .range([height - margin, margin]);
+
+            svg.append("g")
+                .attr("class", "xAxis") 
+                .attr("transform", "translate(0," + (height - margin) + ")")
+                .call(d3.axisBottom(xScale));
+
+            svg.append("g")
+                .attr("class", "yAxis") 
+                .attr("transform", "translate(" + margin + ",0)")
+                .call(d3.axisLeft(yScale));
+
+
+         // "bottom" colorscale
+            var colorScaleBottom = d3.scaleSequential()
+                .interpolator(d3.interpolateRgb(d3.rgb("#457CAB"), d3.rgb("#002045"))) 
+                .domain([d3.min(data.filter(function(d) {
+                    return d.Earner === "bottom";
+                }), function(d) {
+                    return d["Household net adjusted disposable income"];
+                }), d3.max(data.filter(function(d) {
+                    return d.Earner === "bottom";
+                }), function(d) {
+                    return d["Household net adjusted disposable income"];
+                })]);
+
+            // "top" colorscale
+            var colorScaleTop = d3.scaleSequential()
+                .interpolator(d3.interpolateRgb(d3.rgb("#FF6666"), d3.rgb("#990000")))
+                .domain([d3.min(data.filter(function(d) {
+                    return d.Earner === "top";
+                }), function(d) {
+                    return d["Household net adjusted disposable income"];
+                }), d3.max(data.filter(function(d) {
+                    return d.Earner === "top";
+                }), function(d) {
+                    return d["Household net adjusted disposable income"];
+                })]);
+
+
+                // plot
+                svg.selectAll("circle")
+                    .data(data)
+                    .enter()
+                    .append("circle")
+                    .attr("cx", function(d) { return xScale(+d[xValue]); })
+                    .attr("cy", function(d) { return yScale(+d[yValue]); })
+                    .attr("r", 5)
+                    .style("fill", function(d) {
+                        if (d.Earner === "top") {
+                            return colorScaleTop(d["Household net adjusted disposable income"]);
+                        } else if (d.Earner === "bottom") {
+                            return colorScaleBottom(d["Household net adjusted disposable income"]);
+                        }
+                    })
+                    .on("mouseover", function(d) {
+                        var xPos = xScale(+d[xValue])-30;
+                        var yPos = yScale(+d[yValue])+30;
+                        d3.select("#tooltip")
+                            .style("left", xPos + "px")
+                            .style("top", yPos + "px")
+                            .select("#value")
+                            .html(function() {
+                                return d["Country"]+ "<br/>" +
+                                    "*Income: "+ d["Household net adjusted disposable income"] + "<br/>" +
+                                    "*"+xValue+": " + d[xValue] + "<br/>" +
+                                    "*"+yValue+": " + d[yValue] 
+                                }); 
+                        d3.select("#tooltip")
+                            .classed("hidden", false)
+                            .attr("data-x", xPos) 
+                            .attr("data-y", yPos); 
+                        })
+                    .on("mouseout", function() {
+                        d3.select("#tooltip").classed("hidden", true);
+                    });
+
+
+                function updateAxesLabels(xLabel, yLabel) {
+                        svg.select(".xLabel").text(xLabel);
+                        svg.select(".yLabel").text(yLabel);
+                    }
+
+                    xSelect.on("change", function() {
+                        xValue = xSelect.property("value");
+                        xScale.domain(d3.extent(data, function(d) { return +d[xValue]; }));
+                        svg.select(".xAxis").transition().duration(1000).call(d3.axisBottom(xScale));
+                        updateAxesLabels(xValue, yValue);
+                        svg.selectAll("circle")
+                            .transition()
+                            .duration(1000)
+                            .attr("cx", function(d) { return xScale(+d[xValue]); });
+                    });
+
+                    ySelect.on("change", function() {
+                        yValue = ySelect.property("value");
+                        yScale.domain(d3.extent(data, function(d) { return +d[yValue]; }));
+                        svg.select(".yAxis").transition().duration(1000).call(d3.axisLeft(yScale));
+                        updateAxesLabels(xValue, yValue);
+                        svg.selectAll("circle")
+                            .transition()
+                            .duration(1000)
+                            .attr("cy", function(d) { return yScale(+d[yValue]); });
+                    });
+
+                    svg.append("text")
+                        .attr("class", "xLabel")
+                        .attr("text-anchor", "middle")
+                        .attr("x", width/2 )
+                        .attr("y", height - margin/2)
+                        .text(xValue)
+                        .style("font-size", "14px");
+
+                    svg.append("text")
+                        .attr("class", "yLabel")
+                        .attr("text-anchor", "middle")
+                        .attr("x", -height/2 )
+                        .attr("y", margin/2 - margin/4)
+                        .attr("dy", ".75em")
+                        .attr("transform", "rotate(-90)")
+                        .text(yValue)
+                        .style("font-size", "14px");
+
+                });
+
+
+            </script>
+
+</body>
+</html>
+

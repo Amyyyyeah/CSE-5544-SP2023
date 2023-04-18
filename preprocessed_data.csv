@@ -1,0 +1,32 @@
+Country,Life satisfaction,Household net adjusted disposable income,Household net wealth,Employment rate,Quality of support network,Educational attainment,Student skills,Years in education,Life expectancy,Self-reported health,Time devoted to leisure and personal care,Earner
+South Africa,4.9,9338,,39,89,48,,,64.2,,,bottom
+Mexico,6.0,16269,,59,77,42,416,15,75.1,66,,bottom
+Costa Rica,6.3,16517,,55,82,43,415,,80.5,73,,bottom
+Russia,5.5,19546,,70,89,95,481,16,73.2,43,,bottom
+Latvia,6.2,19783,79245,72,92,89,487,18,75.5,47,,bottom
+Greece,5.8,20791,148323,56,78,76,453,19,81.7,79,15.03,bottom
+Hungary,6.0,21026,150296,70,94,86,479,16,76.4,58,15.08,bottom
+Slovak Republic,6.5,21149,171425,68,95,92,469,16,77.8,65,,bottom
+Poland,6.1,23675,233221,69,94,93,513,18,78.0,60,14.68,bottom
+Estonia,6.5,23784,188627,74,95,91,526,18,78.8,57,14.98,bottom
+Korea,5.8,24590,362340,66,80,89,520,17,83.3,34,14.83,bottom
+Portugal,5.8,24877,255303,69,87,55,492,17,81.8,50,,bottom
+Slovenia,6.5,25250,233286,71,95,90,504,18,81.6,67,,bottom
+Czech Republic,6.9,26664,,74,96,94,495,18,79.3,62,,bottom
+Lithuania,6.4,26976,182039,72,89,94,480,18,76.4,46,,bottom
+Spain,6.5,27155,366534,62,93,63,,18,83.9,75,15.75,bottom
+Finland,7.9,33471,230032,72,96,91,516,20,82.1,68,15.17,top
+Sweden,7.3,33730,,75,94,84,503,20,83.2,76,,top
+Denmark,7.5,33774,149864,74,95,82,501,19,81.5,70,,top
+France,6.7,34375,298639,65,94,81,494,17,82.9,67,16.2,top
+Canada,7.0,34421,478240,70,93,92,517,17,82.1,89,14.57,top
+Belgium,6.8,34884,447607,65,90,80,500,19,82.1,74,15.52,top
+Netherlands,7.5,34984,248599,78,94,81,502,19,82.2,75,15.45,top
+Austria,7.2,37001,309637,72,92,86,491,17,82.0,71,14.51,top
+Australia,7.1,37433,528768,73,93,84,499,20,83.0,85,14.36,top
+Germany,7.3,38971,304317,77,90,86,500,18,81.4,66,15.62,top
+New Zealand,7.3,39024,514162,77,95,81,503,18,82.1,86,14.87,top
+Norway,7.3,39144,268358,75,96,82,497,18,83.0,75,15.67,top
+Switzerland,7.5,39697,,80,94,89,498,17,84.0,81,,top
+Luxembourg,7.4,44773,941162,67,91,74,477,15,82.7,72,,top
+United States,7.0,51147,684500,67,94,92,495,17,78.9,88,14.57,top
