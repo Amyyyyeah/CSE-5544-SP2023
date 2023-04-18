@@ -30,10 +30,11 @@ Especially, the project can contribute to international society by discovering b
 The correlation between the Education Attainment and Years in Education Index for different countries.
 
 ### Data & Tools
+```shell
 * Tools = Tableau
 * Code = Vis2.twvb
 * Proceeded Data = Vis2.xlsx
-
+```
 <img src="https://github.com/Amyyyyeah/CSE-5544-SP2023/blob/main/fig2_1.jpeg" width="650px" height="530px" title="server result2" alt="server2"></img><br/>
 * Description of how the completed project corresponds to the proposal
     - To achieve a user-friendly design, we created a map graph that displays the education attainment and duration of education for each country.
@@ -44,9 +45,11 @@ The correlation between the Education Attainment and Years in Education Index fo
 The water quality and air pollution index values for different countries or regions.
 
 ### Data & Tools
+```shell
 * Tools = Tableau
 * Code = Vis3.twvb
 * Proceeded Data = Vis3.xlsx
+```
 
 <img src="https://github.com/Amyyyyeah/CSE-5544-SP2023/blob/main/fig3_1.jpeg" width="650px" height="530px" title="server result2" alt="server2"></img><br/>
 * Description of how the completed project corresponds to the proposal
