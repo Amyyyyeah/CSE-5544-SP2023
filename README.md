@@ -22,10 +22,10 @@ We then interpret the visualization results to explore insight in the dataset. B
 
 Especially, the project can contribute to international society by discovering best practices and improvements for various well-being index factors and thus providing suggestions that can promote learning and collaboration between countries.
 
-### Visualization 2
+## Visualization 2
 The correlation between the Education Attainment and Years in Education Index for different countries.
 
-#### Data & Tools
+### Data & Tools
 * Tools = Tableau
 * Code = Vis2.twvb
 * Proceeded Data = Vis2.xlsx
@@ -36,10 +36,10 @@ The correlation between the Education Attainment and Years in Education Index fo
     - If a country has a longer duration of education, it results in higher education attainment.  We can infer the correlation between education attainment and years of education for different countries.
 
 
-### Visualization 3
+## Visualization 3
 The water quality and air pollution index values for different countries or regions.
 
-#### Data & Tools
+### Data & Tools
 * Tools = Tableau
 * Code = Vis3.twvb
 * Proceeded Data = Vis3.xlsx
@@ -51,7 +51,7 @@ The water quality and air pollution index values for different countries or regi
 
 
 
-### REFERENCES
+## REFERENCES
 [1] C. M. Freitas, P. R. Luzzardi, R. A. Cava, M. Winckler, M. S. Pimenta,
 and L. P. Nedel. On evaluating information visualization techniques. In
 Proceedings of the working conference on Advanced Visual Interfaces, pp.
