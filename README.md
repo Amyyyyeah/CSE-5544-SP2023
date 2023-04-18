@@ -46,7 +46,7 @@ Heatmap that represents water quality and air pollution index values for differe
 
 ### Data & Tools
 ```shell
-- Tools = Tableau
+- Tools = Tableau (with the extension Add-on Charts)
 - Code = Vis3.twvb
 - Proceeded Data = Vis3.xlsx
 ```
