@@ -31,9 +31,9 @@ The correlation between the Education Attainment and Years in Education Index fo
 
 ### Data & Tools
 ```shell
-* Tools = Tableau
-* Code = Vis2.twvb
-* Proceeded Data = Vis2.xlsx
+- Tools = Tableau
+- Code = Vis2.twvb
+- Proceeded Data = Vis2.xlsx
 ```
 <img src="https://github.com/Amyyyyeah/CSE-5544-SP2023/blob/main/fig2_1.jpeg" width="650px" height="530px" title="server result2" alt="server2"></img><br/>
 * Description of how the completed project corresponds to the proposal
@@ -46,9 +46,9 @@ The water quality and air pollution index values for different countries or regi
 
 ### Data & Tools
 ```shell
-* Tools = Tableau
-* Code = Vis3.twvb
-* Proceeded Data = Vis3.xlsx
+- Tools = Tableau
+- Code = Vis3.twvb
+- Proceeded Data = Vis3.xlsx
 ```
 
 <img src="https://github.com/Amyyyyeah/CSE-5544-SP2023/blob/main/fig3_1.jpeg" width="650px" height="530px" title="server result2" alt="server2"></img><br/>
