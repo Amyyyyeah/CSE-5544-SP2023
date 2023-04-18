@@ -55,9 +55,9 @@ The water quality and air pollution index values for different countries or regi
 [1] C. M. Freitas, P. R. Luzzardi, R. A. Cava, M. Winckler, M. S. Pimenta,
 and L. P. Nedel. On evaluating information visualization techniques. In
 Proceedings of the working conference on Advanced Visual Interfaces, pp.
-373–374, 2002. 4
+373–374, 2002.
 
 [2] B. Nikolaev et al. Economic freedom and quality of life: Evidence from the
 oecd’s your better life index. Journal of Private Enterprise, 29(3):61–96,
-2014. 3
+2014.
 
