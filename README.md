@@ -1,4 +1,4 @@
-# Final Project| CSE 5544 (SP2023)
+# Final Project | CSE 5544 (SP2023)
 
 
 # Overview
