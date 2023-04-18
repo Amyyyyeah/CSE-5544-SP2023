@@ -6,7 +6,7 @@
 
 We used OECD Better Life Index dataset. The OECD Better Life Index is a dataset that allows users to compare countries' performance in various areas of well-being, such as education, income, and health. The data is sourced from various reputable international organizations and is publicly available on the OECD website.
 ```shell
-* https://www.oecdbetterlifeindex.org/#/11111111111
+https://www.oecdbetterlifeindex.org/#/11111111111
 ```
 ## User's guide describing how to use your project
 
