@@ -77,7 +77,7 @@ Plot chart that shows the average income and economic freedom and quality of lif
 - Code = 
 - Proceeded Data = 
 ```
-<img src="https://github.com/Amyyyyeah/CSE-5544-SP2023/blob/main/fig4_1.jpeg" width=590px" height="530px" title="server result2" alt="server2"></img><br/>
+<img src="https://github.com/Amyyyyeah/CSE-5544-SP2023/blob/main/fig4_1.jpeg" width="590px" height="530px" title="server result2" alt="server2"></img><br/>
 * Description of how the completed project corresponds to the proposal
     - 
 
