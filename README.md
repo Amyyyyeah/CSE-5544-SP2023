@@ -30,7 +30,7 @@ The correlation between the Education Attainment and Years in Education Index fo
 * Code = Vis2.twvb
 * Proceeded Data = Vis2.xlsx
 
-<img src="https://github.com/Amyyyyeah/CSE-5544-SP2023/blob/main/fig2_1.jpeg" width="650px" height="730px" title="server result2" alt="server2"></img><br/>
+<img src="https://github.com/Amyyyyeah/CSE-5544-SP2023/blob/main/fig2_1.jpeg" width="650px" height="530px" title="server result2" alt="server2"></img><br/>
 * description of how the completed project corresponds to the proposal
     - To achieve a user-friendly design, we created a map graph that displays the education attainment and duration of education for each country.
     - If a country has a longer duration of education, it results in higher education attainment.  We can infer the correlation between education attainment and years of education for different countries.
@@ -44,7 +44,7 @@ The water quality and air pollution index values for different countries or regi
 * Code = Vis3.twvb
 * Proceeded Data = Vis3.xlsx
 
-<img src="https://github.com/Amyyyyeah/CSE-5544-SP2023/blob/main/fig3_1.jpeg" width="650px" height="730px" title="server result2" alt="server2"></img><br/>
+<img src="https://github.com/Amyyyyeah/CSE-5544-SP2023/blob/main/fig_1.jpeg" width="650px" height="530px" title="server result2" alt="server2"></img><br/>
 * description of how the completed project corresponds to the proposal
     - To enhance the user interface design, we incorporated a dot graph. The purple graph is water quality and the red graph is air pollution. If the gap between the purple and red graphs is larger than the others, it indicates that the country has a very healthy environment, and vice versa.
     - If the color of the air pollution column is darker gray, it indicates that the country has a higher level of air pollution. If the color of the water quality column is more purple, it means that the country has a good level of water quality.
