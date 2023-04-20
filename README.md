@@ -33,7 +33,7 @@ World map that shows the Life satisfaction index for various countries with a us
 ```shell
 - Tools = Tableau
 - Code = Vis1.twb
-- Proceeded Data = preprocessed_data.csv
+- Proceeded Data = data.xlsx
 ```
 <img src="https://github.com/Amyyyyeah/CSE-5544-SP2023/blob/main/fig1_1.jpeg" width="700px" height="500px" title="server result2" alt="server2"></img><br/>
 * Description of how the completed project corresponds to the proposal
